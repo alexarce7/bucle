@@ -1,0 +1,20 @@
+$def with(datos)
+
+<html>
+    <head></head>
+    <body>
+        <table border="=2px">
+            <tr>
+                <td>No.</td>
+                <td>Dia</td>
+            </tr>
+        $ cont=0
+        $for fila in datos:
+                <tr=$fila>
+                <td>$cont</td>
+                <td>$fila</td>
+                $ cont += 1
+                </tr>
+        </table>
+    </body>
+</html>
